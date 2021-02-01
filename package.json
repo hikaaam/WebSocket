@@ -1,0 +1,26 @@
+{
+  "name": "hidroponik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ilyas a yusuf",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "express-subdomain": "^1.0.5",
+    "firebase": "^7.18.0",
+    "googleapis": "^59.0.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.6",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
