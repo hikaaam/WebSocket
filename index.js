@@ -273,7 +273,15 @@ io.on('connection', function (socket) {
             console.log("\nTarget Device Is Offline or Doesn't exist ");
         }
     });
- 
+    socket.on('typing', function (data) {
+        var id = data._id;
+        if (clients.hasOwnProperty(id)) {
+            io.to(clients[id]['id']).emit('typing', data._name);
+            console.log(clients[id]['id']);
+        } else {
+            console.log("\nTarget Device Is Offline or Doesn't exist ");
+        }
+    });
     socket.on('disconnect', function (data) {
 
         delete clients[socket.nickname];
